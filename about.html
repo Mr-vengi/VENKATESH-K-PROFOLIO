@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | K. Venkatesh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #9b59ff;
+      --bg1: #0c0e16;
+      --bg2: #111325;
+      --blur: rgba(17, 19, 37, 0.65);
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: linear-gradient(135deg, var(--bg1), var(--bg2));
+      background-size: 400% 400%;
+      animation: bgShift 15s ease infinite;
+    }
+    @keyframes bgShift {
+      0%, 100% { background-position: 0% 0%; }
+      50% { background-position: 100% 100%; }
+    }
+    header {
+      background: var(--blur);
+      backdrop-filter: blur(10px);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+    .logo {
+      font-weight: 600;
+      font-size: 1.4rem;
+      color: var(--accent);
+    }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 1.2rem;
+      position: relative;
+      transition: color 0.2s;
+    }
+    nav a::after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 0;
+      background: var(--accent);
+      transition: width 0.25s;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    p {
+      line-height: 1.8;
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+    }
+    strong {
+      color: #fff;
+    }
+    em {
+      color: #ccc;
+      font-style: italic;
+      display: block;
+      margin-top: 1.5rem;
+    }
+    @media(max-width: 768px) {
+      .container {
+        padding: 1.2rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="logo">K.<span style="color:#fff">Venkatesh</span></div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Content -->
+  <div class="container">
+    <h1>About Me</h1>
+    <p>
+      I am an <strong>enthusiastic</strong> and <strong>motivated entry-level software developer</strong> with a solid foundation in programming languages including <strong>Python</strong>, <strong>Java</strong>, and <strong>C</strong>. Passionate about <strong>Full-Stack Web Development</strong>, <strong>Artificial Intelligence</strong>, and <strong>Data Science</strong>, I bring strong problem-solving abilities and a learner’s mindset to every project I undertake.
+    </p>
+    <p>
+      Skilled in web technologies such as <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, I also possess hands-on experience in <strong>mobile app development</strong>. Proficient in tools like <strong>Microsoft Excel</strong> and <strong>MySQL</strong> for data analysis and visualization, I enjoy turning raw data into meaningful insights that drive decisions.
+    </p>
+    <p>
+     <p>
+  I thrive in collaborative environments and have a keen ability to adapt quickly to new technologies and frameworks. With a strong academic foundation in <strong>Information Technology</strong> and a portfolio of practical projects, I am eager to contribute effectively to innovative teams and fast-paced development environments.
+</p>
+
+    </p>
+    <em>“My goal is to transform ideas into impactful digital solutions that improve lives and solve real-world problems.”</em>
+  </div>
+
+</body>
+</html>
